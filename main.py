@@ -5,18 +5,19 @@
 # Surprenez nous par votre imagination et perfectionnez le code a votre guise
 
 def celsius_to_fahrenheit(celsius):
-    return (celsius * 9/5) + 32
+    return ""
 
 def fahrenheit_to_celsius(fahrenheit):
-    return (fahrenheit - 32) * 5/9
+    return ""
 
 def celsius_to_kelvin(celsius):
-    return celsius + 273.15
+    return ""
 
 def kelvin_to_celsius(kelvin):
-    return kelvin - 273.15
+    return ""
 
 def afficher_menu():
+    // AMELIOREZ A VOTRE GUISE
     print("=== Convertisseur de Température ===")
     print("1. Celsius vers Fahrenheit")
     print("2. Fahrenheit vers Celsius")
@@ -44,26 +45,7 @@ def main():
                 print(f"{temp}°F = {fahrenheit_to_celsius(temp):.2f}°C")
             except ValueError:
                 print("Erreur : Veuillez entrer un nombre valide.")
-
-        elif choix == '3':
-            temp = input("Entrez la température en Celsius : ")
-            try:
-                temp = float(temp)
-                print(f"{temp}°C = {celsius_to_kelvin(temp):.2f}K")
-            except ValueError:
-                print("Erreur : Veuillez entrer un nombre valide.")
-
-        elif choix == '4':
-            temp = input("Entrez la température en Kelvin : ")
-            try:
-                temp = float(temp)
-                print(f"{temp}K = {kelvin_to_celsius(temp):.2f}°C")
-            except ValueError:
-                print("Erreur : Veuillez entrer un nombre valide.")
-        
-        elif choix == '5':
-            print("Merci d'avoir utilisé le convertisseur !")
-            break
+                //AJOUTEZ LES AUTRES CAS
         else:
             print("Option invalide. Veuillez choisir entre 1 et 5.")
 
